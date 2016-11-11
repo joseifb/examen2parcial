@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 10, 2016 8:13:40 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mx.uach.examen2parcial.Comptadoras" table="comptadoras" catalog="db_examen" optimistic-lock="version">
+        <id name="idComptadoras" type="int">
+            <column name="idComptadoras" />
+            <generator class="assigned" />
+        </id>
+        <property name="modelo" type="string">
+            <column name="modelo" length="45" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" />
+        </property>
+        <property name="anoFab" type="date">
+            <column name="ano_fab" length="10" />
+        </property>
+        <property name="vigente" type="string">
+            <column name="vigente" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
